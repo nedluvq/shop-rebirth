@@ -1,0 +1,49 @@
+.product_card {
+    padding-top: 100px;
+    display: inline-block;
+    margin: 10px;
+    width: 380px;
+    height: 500px;
+    text-align: center;
+    transition: 400ms;
+    padding: 10px;
+    background-color: #424242;
+    transition: width 1s, height 1s;
+}
+
+.product_card:hover {
+    background-color: #272727;
+    width: 480px;
+    height: 600px;
+
+}
+
+.product_name, .product_desk, .product_cost {
+    color: white;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+.buy_button {
+    background-color: #60E26F;
+    border-radius: 15px;
+    border: 1px grey solid;
+    font-size: 15px;
+    font-family: 'Gemunu Libre', sans-serif;
+    align-items: center;
+    width: 60px;
+    height: 30px;
+    color:black;
+    transition: width 1s, height 1s;
+
+}
+
+.buy_button:hover {
+    transform: translateY(2px);
+    width: 120px;
+    height: 60px;
+}
+
+.image {
+    width: 300px;
+    height: 280px;
+}
