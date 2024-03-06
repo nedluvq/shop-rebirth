@@ -1,5 +1,5 @@
 import axios from "axios"
-import { apiKey } from "./apiKey"
+import { apiKey } from "../apiKey/apiKey"
 
 export const getGPU = () => {
     var GPUList = []
