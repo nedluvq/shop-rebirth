@@ -11,16 +11,24 @@ const Shop = () => {
                     Gaming Parts
                 </h1>
             </div>
-            <div className={css.nav}>
-                <Link to="/GPU"><p className={css.part}>GPU</p></Link>
-                <Link to="/CPU"><p className={css.part}>CPU</p></Link>
-            </div> 
-            
-            <Routes>
-                <Route path="/" element={<Shop/>} />
-                <Route path="/CPU" element={<CPU />} />
-                <Route path="/GPU" element={<GPU />} />
-            </Routes>
+            <div className={css.wrapper}>
+                <div className={css.nav}>
+                    <div className={css.dropdown}>
+                    <button className={css.dropbtn}>Menu</button>
+                        <div className={css.dropdown_content}>
+                        <Link to="/GPU"><p>GPU</p></Link>
+                        <Link to="/CPU"><p>CPU</p></Link>
+                        </div>
+                </div>
+                    
+                </div> 
+                
+                <Routes>
+                    <Route path="/" element={<Shop/>} />
+                    <Route path="/CPU" element={<CPU />} />
+                    <Route path="/GPU" element={<GPU />} />
+                </Routes>
+            </div>
         </div>
     )
 }
