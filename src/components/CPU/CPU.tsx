@@ -10,7 +10,6 @@ const GPU = () => {
     }, [])
     return (
         <div>
-            <p className={css.part}>CPU</p>
             <div className={css.wrapper}>
                 {data.map((data,index) => <Item name={data.name} desc={data.desc} price={data.price} URL={data.URL} buyURL={data.buyURL} key={index}/>)}
             </div>
