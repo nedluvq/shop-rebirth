@@ -24,7 +24,7 @@ const Shop = () => {
                 </div> 
                 
                 <Routes>
-                    <Route path="/" element={<Shop/>} />
+                    <Route path="*" element={<Shop/>} />
                     <Route path="/CPU" element={<CPU />} />
                     <Route path="/GPU" element={<GPU />} />
                 </Routes>
