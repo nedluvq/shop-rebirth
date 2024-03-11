@@ -6,9 +6,9 @@ import Shop from './pages/Shop/Shop'
 const App = () => {
   return (
     <div className='wrapper'>
-      <Header />
-      <Shop />
-      <Footer />
+        <Header />
+        <Shop />
+        <Footer />
     </div>
   ) 
 }
